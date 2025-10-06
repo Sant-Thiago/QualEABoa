@@ -1,10 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import Tela from './tela';
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+// import './App.css';
+import Home from './pages/Home';
+import { StrictMode } from "react";
 
 function App() {
   return (
-    <Tela />
+    <StrictMode>
+      <BrowserRouter>
+        <Routes>
+          
+          <Route
+            path='/'
+            element={<Home />}
+          />
+
+        </Routes>
+      </BrowserRouter>
+    </StrictMode>
   );
 }
 

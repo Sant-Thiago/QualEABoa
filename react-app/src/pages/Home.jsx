@@ -1,8 +1,7 @@
-// src/App.jsx
 import { useState } from "react";
-import "./index.css";
+import Header from "../components/Header";
 
-export default function Tela() {
+export default function Home() {
   const [search, setSearch] = useState("");
 
   const suggestions = [
@@ -13,14 +12,10 @@ export default function Tela() {
 
   return (
     <div className="app">
-      <header className="topbar">
-        <h1>VibeCity</h1>
-        <div className="top-right">
-          <span className="bell">🔔</span>
-          <div className="avatar">👩‍🦰</div>
-        </div>
-      </header>
-
+      <Header 
+        text={"Qual a Boa?"}
+      />
+      
       <div className="search">
         <span className="icon">🔍</span>
         <input
