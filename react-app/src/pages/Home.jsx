@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Header from "../components/Header";
+import Header from "../components/header/default/Header";
+import Navbar from "../components/navbar/Navbar";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -78,14 +79,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <nav className="bottom-nav">
-        <button>🏠<span>Início</span></button>
-        <button>📋<span>Lista</span></button>
-        <button>🗺️<span>Mapa</span></button>
-        <button>👥<span>Social</span></button>
-        <button>👤<span>Perfil</span></button>
-      </nav>
+      <Navbar />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 // import './App.css';
 import Home from './pages/Home';
+import Place from './pages/Place';
 import { StrictMode } from "react";
 
 function App() {
@@ -12,6 +13,11 @@ function App() {
           <Route
             path='/'
             element={<Home />}
+          />
+
+          <Route 
+            path='/place'
+            element={<Place />}
           />
 
         </Routes>

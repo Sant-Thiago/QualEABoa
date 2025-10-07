@@ -1,0 +1,178 @@
+.main {
+  margin: 0 auto;
+  background-color: #f9fafb; /* bg-gray-50 */
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.headerImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, black);
+    pointer-events: none;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* arrumar o tamanho da imagem pois está do tamanho total da tela, e o header atrapalha nisso */
+
+.headerText {
+    position: absolute;
+    bottom: 18%;
+    left: 1rem;
+    color: white;
+}
+
+.headerText h1 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+  margin: 0;
+}
+
+.headerText p {
+  font-size: 0.875rem; /* text-sm */
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Ações */
+.actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb; /* gray-200 */
+  background-color: white;
+}
+
+.actions button {
+  color: #2563eb; /* text-blue-600 */
+  font-weight: 600;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  text-decoration: underline;
+}
+
+/* Seções gerais */
+.section {
+  padding: 1rem;
+  background-color: white;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Sobre o Local */
+.section p {
+  font-size: 0.875rem;
+  color: #374151; /* gray-700 */
+  margin-bottom: 0.5rem;
+}
+
+.mapPlaceholder {
+  width: 100%;
+  height: 10rem; /* h-40 */
+  background-color: #e5e7eb; /* gray-200 */
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af; /* gray-400 */
+  font-size: 0.875rem;
+}
+
+/* Serviços Oferecidos */
+.servicesContainer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.servicesContainer div span {
+  display: block;
+  font-size: 1.25rem; /* text-xl */
+}
+
+.servicesContainer div p {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+/* Promoções */
+.promoCard {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.promoCard img {
+  width: 100%;
+  height: 9rem; /* h-36 */
+  object-fit: cover;
+}
+
+.promoCardContent {
+  padding: 0.75rem;
+}
+
+.promoCardContent h3 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.promoCardContent p {
+  font-size: 0.875rem;
+  color: #4b5563; /* gray-600 */
+  margin-bottom: 0.5rem;
+}
+
+.promoCardContent span {
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500;
+  color: #db2777; /* pink-600 */
+}
+
+/* Avaliações */
+.reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.reviewCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.reviewCard p:first-child {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.reviewCard p:last-child {
+  font-size: 0.875rem;
+  color: #374151;
+}
